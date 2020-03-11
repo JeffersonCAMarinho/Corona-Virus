@@ -1,0 +1,112 @@
+@charset 'utf-8';
+
+:root
+{
+    --color-primary-0: #A31014;
+    --color-primary-1: #DE4F53;
+    --color-primary-2: #C92429;
+    --color-primary-3: #810003;
+    --color-primary-4: #570002;
+
+    --rgba-primary-0: 163, 16, 20;
+    --rgba-primary-1: 222, 79, 83;
+    --rgba-primary-2: 201, 36, 41;
+    --rgba-primary-3: 129,  0,  3;
+    --rgba-primary-4:  87,  0,  2;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+html
+{
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+body
+{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/corona.png);
+    background-position: 110% center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #1B1B1B;
+    font-family: sans-serif;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+#esquerda
+{
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-end;
+    text-align: right;
+}
+
+#esquerda h1
+{
+    padding: 0.25rem 0.5rem;
+    background-color: black;
+    color: white;
+    font-size: 5em;
+    font-weight: 700;
+}
+
+#esquerda h2
+{
+    display: inline-block;
+    padding: 0.125rem 0.25rem;
+    background-color: #C92429;
+    font-size: 1.5em;
+}
+
+#direita
+{
+    flex: 1;
+    overflow-y: initial;
+}
+
+#direita nav
+{
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+#direita nav ul
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    list-style: none;
+}
+
+#direita nav ul li
+{
+    display: inline-block;
+    margin: auto 0.25rem;
+    padding: 0.25rem;
+    background-color: white;
+    color: #C92429;
+    font-weight: 700;
+    box-shadow: 0.25rem 0.25rem rgb(222, 79, 83, 0.75);
+}
+
+#direita nav ul li a
+{
+    color: inherit;
+}
