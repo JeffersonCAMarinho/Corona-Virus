@@ -116,8 +116,15 @@ body
     
     margin-right: 180px; 
     padding-bottom: 200px;
-    margin-top: 300px;
+    margin-top: 50px;
     
+}
+
+.titulo
+{
+    margin-right: 20px; 
+   
+    margin-top: 150px;
 }
 
 .button
